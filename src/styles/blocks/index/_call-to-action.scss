@@ -1,0 +1,44 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+
+.call-to-action{
+  padding: 40px 0;
+  color: $white;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  @include breakpoint(md) {
+    padding: 65px 0 50px;
+  }
+}
+
+.call-to-action--first{
+  background-image: url($imageDir + 'call-to-action-mobile.jpg');
+  @include breakpoint(md) {
+    background-image: url($imageDir + 'call-to-action-desktop@1.35x.jpg');
+  }
+}
+
+.call-to-action--second{
+  background-image: url($imageDir + 'call-to-action-mobile-2.jpg');
+  @include breakpoint(md) {
+    background-image: url($imageDir + 'call-to-action-desktop-2@1.35x.jpg');
+  }
+}
+
+.call-to-action__text{
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: $fontBold;
+  text-align: center;
+  font-size: 20px;
+  @include breakpoint(md) {
+    margin: 0 auto 25px;
+    max-width: 575px;
+  }
+}
+
+.call-to-action__btn{
+  display: block;
+  margin: 0 auto;
+}

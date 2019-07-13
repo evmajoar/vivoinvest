@@ -1,0 +1,20 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+
+.advantages-company__item--one{
+  &:before {
+    @extend %-svg-icon-clock;
+  }
+}
+
+.advantages-company__item--two{
+  &:before {
+    @extend %-svg-icon-gear;
+  }
+}
+
+.advantages-company__item--three{
+  &:before {
+    @extend %-svg-icon-suit;
+  }
+}

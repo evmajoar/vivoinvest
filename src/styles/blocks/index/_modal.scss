@@ -1,0 +1,560 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+@import '../../helpers/sprite';
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+
+.modal--2 {
+  .modal__content {
+    background: rgb(5, 48, 65);
+  }
+}
+
+.modal__dialog {
+  padding: 35px 10px 20px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__close {
+  position: absolute;
+  padding: 0;
+  top: 12px;
+  right: 10px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+
+  @include breakpoint(md) {
+    top: 50px;
+    right: 50px;
+  }
+
+  &:after {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url($imageDir + 'close.png');
+  }
+}
+
+.show {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.hidden {
+  overflow: hidden;
+}
+
+.modal__title {
+  @include sizeH2;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+
+
+// модальное окно Обратный звонок
+.modal-callback {
+  margin: 0 auto;
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal-callback__title {
+  text-align: center;
+}
+
+.modal-callback__text {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.modal-callback__form-number {
+  margin: 0 auto;
+  max-width: 405px;
+  width: 100%;
+}
+
+.modal-callback__group {
+  margin-bottom: 20px;
+}
+
+.form-number__button {
+  width: 100%;
+}
+
+
+// модальное окно Фильтры
+.control {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control-indicator {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background: #ffffff;
+  border: 1px solid $colorFilter;
+  transition: all 0.3s;
+}
+
+
+
+.control input:checked~.control-indicator {
+  background: #ffc200;
+}
+
+.control:hover input:not([disabled]):checked~.control-indicator,
+.control input:checked:focus~.control-indicator {
+  background: #ffc200;
+  border: 1px solid #ffc200;
+}
+
+.control input:disabled~.control-indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.control-indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.control input:checked~.control-indicator:after {
+  display: block;
+}
+
+.control-checkbox .control-indicator:after {
+  left: 8px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #423f34;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled~.control-indicator:after {
+  border-color: #7b7b7b;
+}
+
+.checkbox-number {
+  margin: 0;
+  height: 44px;
+  max-width: 55px;
+  width: 100%;
+  display: flex;
+  transition: all 0.3s;
+
+  .control-indicator {
+    @include breakpoint(lg) {
+      &:hover {
+        background: #ffc200;
+      }
+    }
+  }
+}
+
+
+.control--big {
+  width: 100%;
+  height: 100%;
+}
+
+.control-indicator--big {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-filter__content {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 320px;
+
+
+  @include breakpoint(md) {
+    max-width: 370px;
+  }
+
+  @include breakpoint(lg) {
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.modal-filter__title {
+  margin-bottom: 20px;
+
+  @include breakpoint(lg) {
+    margin-bottom: 30px;
+  }
+}
+
+.filter__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  &:after {
+    @include pseudo;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 1px;
+    background-color: $colorSite;
+  }
+
+  @include breakpoint(lg) {
+    max-width: 410px;
+  }
+}
+
+.filter__item {
+  max-width: 125px;
+  flex-basis: 125px;
+
+  @include breakpoint(lg) {
+    max-width: 180px;
+    flex-basis: 180px;
+  }
+}
+
+
+
+.filter-option__list {
+  @include breakpoint(lg) {
+    display: flex;
+  }
+}
+
+.modal-filter__legend {
+  color: $colorSite2;
+}
+
+.filter-option {
+  padding: 7px 10px;
+  width: 100%;
+  border: 1px solid $colorFilter;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    @include breakpoint(lg) {
+      background-color: $btnMarker;
+    }
+  }
+
+  @include breakpoint(lg) {
+    max-width: 205px;
+    width: 100%;
+
+    &:nth-child(1) {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px
+    }
+
+    &:nth-child(2) {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px
+    }
+  }
+}
+
+.filter-option__list {
+  @include breakpoint(lg) {
+    display: flex;
+  }
+}
+
+
+.filter-number__list {
+  display: flex;
+}
+
+.modal__content {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  select {
+    width: 100%;
+  }
+}
+
+.modal-filter__form {
+  margin-bottom: 35px;
+}
+
+.modal-filter__form-wrapper {
+  margin-bottom: 40px;
+
+  @include breakpoint(lg) {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  fieldset {
+    margin-bottom: 20px;
+
+    @include breakpoint(lg) {
+      margin-bottom: 30px;
+      max-width: 45%;
+      width: 100%;
+
+      &:nth-child(1) {
+        order: 1;
+      }
+
+      &:nth-child(2) {
+        order: 2;
+      }
+
+      &:nth-child(3) {
+        order: 4;
+      }
+
+      &:nth-child(4) {
+        order: 3;
+      }
+
+      &:nth-child(5) {
+        order: 5;
+      }
+
+      &:nth-child(6) {
+        order: 6;
+      }
+    }
+  }
+}
+
+.modal-filter__button {
+  margin: 0 auto 15px;
+  display: block;
+
+  @include breakpoint(lg) {
+    margin-right: 40px;
+    display: inline-block;
+  }
+}
+
+.modal-filter__button-reset {
+  padding: 0;
+  margin: 0 auto 15px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid $colorSite;
+  background-color: transparent;
+
+  @include breakpoint(lg) {
+    display: inline-block;
+  }
+}
+
+
+
+// предложение
+.modal-sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-sentence__title {
+  text-align: center;
+}
+
+.modal-sentence__form-number {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 405px;
+  width: 100%;
+}
+
+.modal-sentence__group {
+  margin: 20px 0;
+}
+
+
+// ЧАТ
+.modal-chat__dialog {
+  position: relative;
+  padding-top: 15px;
+  padding-right: 45px;
+  background-color: $bgColor;
+
+  @include breakpoint(md) {
+    padding-top: 60px;
+  }
+}
+
+.modal-chat__content {
+  position: relative;
+  max-width: 320px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  background-color: $bgColor;
+
+  &:after {
+    @include pseudo;
+    @extend %-svg-icon-scroll-big;
+    right: -30px;
+    top: 50px;
+
+    @include breakpoint(md) {
+      right: -70px;
+      top: 0;
+    }
+  }
+
+  @include breakpoint(md) {
+    max-width: 490px;
+  }
+}
+
+.modal-chat__close {
+  width: 38px;
+  height: 38px;
+  background-color: $white;
+  border-radius: 50%;
+
+  &:after {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.modal-chat-city__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.modal-chat-city__item {
+  margin-bottom: 10px;
+
+  &:first-child {
+    margin-right: 10px;
+
+    @include breakpoint(md) {
+      margin-right: 0;
+    }
+  }
+
+  &:not(:last-child) {
+    @include breakpoint(md) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.modal-chat-city__btn {
+  font-size: 13px;
+}
+
+.modal-chat__name {
+  margin: 0;
+  margin-top: auto;
+  display: block;
+  font-size: 13px;
+}
+
+// модалка Локации
+.modal-dots__dialog {
+  padding: 0;
+}
+
+.modal-dots__content {
+  max-width: 320px;
+  display: flex;
+  align-items: flex-end;
+  background-image: url($imageDir + 'map-img.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  .modal-dots__item {
+    padding: 0 10px;
+    width: 320px;
+
+    @include breakpoint(md) {
+      position: absolute;
+      top: 38%;
+      left: 28%;
+    }
+  }
+
+  @include breakpoint(md) {
+    max-width: 100%;
+    background-image: url($imageDir + 'map-big.jpg');
+  }
+}

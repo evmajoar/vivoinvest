@@ -1,0 +1,357 @@
+<div id="callback" class="modal">
+  <div class="modal__dialog">
+    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    <div class="modal__content modal-callback">
+      <h2 class="modal-callback__title">Оставьте телефон и наш эксперт перезвонит вам в течение минуты</h2>
+      <p class="modal-callback__text">Мы продаем без комиссии по ценам застройщиков и собственников. Нас выбирают из-за
+        высококлассного сервиса,
+        опыта и умения договориться о лучших условиях приобретения для вас</p>
+      <form class="form-number modal-callback__form-number">
+        <p class="form-number__group modal-callback__group">
+          <label for="input-search" class="visually-hidden">Номер телефона</label>
+          <input class="form-number__input input" id="modal-number" type="number" placeholder="Телефон" required>
+        </p>
+        <button class="form-number__button btn btn--yellow" type="submit">Оставить</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div id="modal-more" class="modal modal-more">
+  <div class="modal__dialog">
+    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    <div class="modal__content">
+      <h2 class="modal__title">Модальное окно для КЕЙСОВ</h2>
+      <ul class="cases__carousel-list">
+        <li class="cases__carousel-item">
+          <div class="cases__item-info">
+            <table class="cases__table">
+              <tbody>
+                <tr>
+                  <th class="cases__value">Комплекс</td>
+                  <td class="cases__field">Чистое небо</td>
+                </tr>
+                <tr>
+                  <th class="cases__value">Рост цены за год</td>
+                  <td class="cases__field">27%</td>
+                </tr>
+                <tr>
+                  <th class="cases__value">Площадь, м2</td>
+                  <td class="cases__field">304,5</td>
+                </tr>
+                <tr>
+                  <th class="cases__value">Вложения, млн руб.</td>
+                  <td class="cases__field">32,26</td>
+                </tr>
+                <tr>
+                  <th class="cases__value">Ежемесячный доход, руб.</td>
+                  <td class="cases__field">458 500</td>
+                </tr>
+                <tr>
+                  <th class="cases__value">ROI</td>
+                  <td class="cases__field">14,2%</td>
+                </tr>
+                <tr>
+                  <th class="cases__value">ROI без учета роста цены</td>
+                  <td class="cases__field">10%</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cases__report">
+              <p class="cases__report-title">Что сделано</p>
+              <ul class="cases__report-list">
+                <li class="cases__report-item">Проанализировав все предложения коммерческих помещений от застройщиков,
+                  мы
+                  выбрали самые перспективные локации и определили в них комплексы
+                  с наибольшей проходимостью.
+                </li>
+                <li class="cases__report-item">Искомые параметры: максимальная доходность объекта</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div id="best-offer" class="modal best-offer">
+  <div class="modal__dialog">
+    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    <div class="modal__content">
+      <h2 class="modal__title">Модальное окно Сделаем лучшее предложение</h2>
+    </div>
+  </div>
+</div>
+
+
+<div id="modal-filter" class="modal">
+  <div class="modal__dialog">
+    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    <div class="modal__content modal-filter__content">
+      <h2 class="modal-filter__title">Поиск комплекса по параметрам</h2>
+      <form class="modal-filter__form" action="#">
+        <div class="modal-filter__form-wrapper">
+          <fieldset>
+            <legend class="modal-filter__legend">Город</legend>
+            <ul class="filter-option__list">
+              <li class="filter-option">
+                <label class="control control-checkbox">
+                  Москва
+                  <input type="checkbox" checked="checked">
+                  <span class="control-indicator"></span>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label class="control control-checkbox">
+                  Санкт-Петербург
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend class="modal-filter__legend">Тип</legend>
+            <ul class="filter-option__list">
+              <li class="filter-option">
+                <label class="control control-checkbox">
+                  Жилой
+                  <input type="checkbox" checked="checked">
+                  <span class="control-indicator"></span>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label class="control control-checkbox">
+                  Коммерческий
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend class="modal-filter__legend">Количество комнат</legend>
+            <ul class="filter-number__list">
+              <li class="checkbox-number">
+                <label class="control control--big">
+                  <input type="checkbox">
+                  <span class="control-indicator control-indicator--big">Ст</span>
+                </label>
+              </li>
+              <li class="checkbox-number">
+                <label class="control control--big">
+                  <input type="checkbox">
+                  <span class="control-indicator control-indicator--big">1</span>
+                </label>
+              </li>
+              <li class="checkbox-number">
+                <label class="control control--big">
+                  <input type="checkbox" checked="checked">
+                  <span class="control-indicator control-indicator--big">2</span>
+                </label>
+              </li>
+              <li class="checkbox-number">
+                <label class="control control--big">
+                  <input type="checkbox" checked="checked">
+                  <span class="control-indicator control-indicator--big">3</span>
+                </label>
+              </li>
+              <li class="checkbox-number">
+                <label class="control control--big">
+                  <input type="checkbox">
+                  <span class="control-indicator control-indicator--big">4</span>
+                </label>
+              </li>
+              <li class="checkbox-number">
+                <label class="control control--big">
+                  <input type="checkbox">
+                  <span class="control-indicator control-indicator--big">5+</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend class="modal-filter__legend">Срок сдачи</legend>
+            <ul class="filter__list">
+              <li class="filter__item sort-icon">
+                <select class="input" aria-label="Сдан-не здан">
+                  <option>Сдан</option>
+                  <option>Не сдан</option>
+                </select>
+              </li>
+              <li class="filter__item sort-icon">
+                <select class="input" aria-label="Квадратные метры">
+                  <option>2 кв 2020</option>
+                  <option>2 кв 2020н</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend class="modal-filter__legend">Стоимость, млн руб.</legend>
+            <ul class="filter__list">
+              <li class="filter__item sort-icon">
+                <select class="input" aria-label="Стоимость от">
+                  <option>2,65</option>
+                  <option>3,65</option>
+                </select>
+              </li>
+              <li class="filter__item sort-icon">
+                <select class="input" aria-label="Стоимость до">
+                  <option>8,5</option>
+                  <option>7,5</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend class="modal-filter__legend">Площадь, м2</legend>
+            <ul class="filter__list">
+              <li class="filter__item sort-icon">
+                <select class="input" aria-label="Площадь от">
+                  <option>25</option>
+                  <option>30</option>
+                </select>
+              </li>
+              <li class="filter__item sort-icon">
+                <select class="input" aria-label="Площадь до">
+                  <option>45</option>
+                  <option>50</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <button class="modal-filter__button btn btn--yellow" type="submit">Показать 12 комплексов</button>
+        <button class="modal-filter__button-reset" type="reset">Сбросить фильтры</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div id="timeout" class="modal">
+  <div class="modal__dialog">
+    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    <div class="modal__content modal-callback">
+      <h2 class="modal__title modal-callback__title">Сайт загружался дольше обычного?</h2>
+      <p class="modal-callback__text">Действительно, так работает большинство менеджеров отдела продаж… Но не нашего!
+        Уже через 40 минут вы будете иметь лучшее предложение на рынке, подкрепленное расчетами доходности </p>
+      <form class="form-number modal-callback__form-number">
+        <p class="form-number__group modal-callback__group">
+          <label for="input-search" class="visually-hidden">Номер телефона</label>
+          <input class="form-number__input input" id="modal-number-timeout" type="number" placeholder="Телефон" required>
+        </p>
+        <button class="form-number__button btn btn--yellow" type="submit">Оставить</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div id="sentence" class="modal">
+  <div class="modal__dialog">
+    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    <div class="modal__content modal-sentence">
+      <h2 class="modal__title modal-sentence__title">Недвижимость в каком городе вас интересует?</h2>
+      <form class="form-number modal-sentence__form-number">
+        <fieldset>
+          <legend class="modal-filter__legend">Город</legend>
+          <ul class="filter-option__list">
+            <li class="filter-option">
+              <label class="control control-checkbox">
+                Москва
+                <input type="checkbox" checked="checked">
+                <span class="control-indicator"></span>
+              </label>
+            </li>
+            <li class="filter-option">
+              <label class="control control-checkbox">
+                Санкт-Петербург
+                <input type="checkbox">
+                <span class="control-indicator"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <p class="form-number__group modal-sentence__group">
+          <label for="input-search" class="visually-hidden">Номер телефона</label>
+          <input class="form-number__input input" id="modal-number-sentence" type="number" placeholder="Телефон" required>
+        </p>
+        <button class="form-number__button btn btn--yellow" type="submit">Скачать презентацию</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div id="chat" class="modal modal-chat">
+  <div class="modal__dialog modal-chat__dialog">
+    <button class="modal__close modal-chat__close" type="button"><span class="visually-hidden">Закрыть модальное
+        окно</span></button>
+    <div class="modal__content modal-chat__content">
+      <div class="modal-chat__block">
+        <h2 class="visually-hidden">Чат</h2>
+        <ul class="chat__list">
+          <li class="chat__item">
+            Здравствуйте. Я —искусственный интеллект VivoInvest. Найду для вас лучшее предложение!
+          </li>
+          <li class="chat__item">
+            Супер! Давай.
+          </li>
+          <li class="chat__item">
+            В каком городе вам интересна недвижимость?
+          </li>
+        </ul>
+        <ul class="modal-chat-city__list">
+          <li class="modal-chat-city__item">
+            <button type="button" class="modal-chat-city__btn btn btn--brown">Москва</button>
+          </li>
+          <li class="modal-chat-city__item">
+            <button type="button" class="modal-chat-city__btn btn btn--brown">Санкт-Петербург</button>
+          </li>
+          <li class="modal-chat-city__item">
+            <button type="button" class="modal-chat-city__btn btn btn--brown">Оба города</button>
+          </li>
+        </ul>
+      </div>
+      <p class="modal-chat__name">VivoInvest Intellegent Search</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="dots" class="modal modal-dots">
+  <div class="modal__dialog modal-dots__dialog">
+    <button class="modal__close modal-chat__close" type="button"><span class="visually-hidden">Закрыть модальное
+        окно</span></button>
+    <div class="modal__content modal-dots__content">
+      <h2 class="visually-hidden">Локации</h2>
+      <ul class="complexes-russia__list modal-dots__item">
+        <li class="complexes-russia__item complexes-russia__item--1">
+          <p class="complexes-russia__place">
+            <span class="complexes-russia__adress">Москва<br>
+              м. Черкизовская</span>
+            <span class="complexes-russia__quantity btn btn--white-mini btn--white">3724</span>
+          </p>
+
+          <div class="complexes-russia__apartment-content">
+            <h3 class="complexes-russia__apartment-name">Level Амурская</h3>
+            <p class="complexes-russia__apartment-info">
+              <span class="complexes-russia__apartment-price">от 5,6 млн руб.</span>
+              <span class="complexes-russia__apartment-space">4 кв 2020</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

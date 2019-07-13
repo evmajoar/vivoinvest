@@ -1,0 +1,57 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+
+.online-base{
+  padding: 40px 0;
+  background-color: $bgColor;
+  @include breakpoint(lg) {
+    padding-top: 60px;
+  }
+}
+
+.online-base__container{
+  @include breakpoint(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.online-base__title{
+  @include sizeH2;
+  margin-bottom: 20px;
+  text-align: center;
+  @include breakpoint(md) {
+    max-width: 500px;
+    text-align: left;
+  }
+  @include breakpoint(lg) {
+    margin-bottom: 30px;
+    // max-width: 500px;
+  }
+}
+
+.online-base__list{
+  margin-bottom: 30px;
+}
+
+.online-base__open{
+  margin: 0;
+  padding-top: 185px;
+  background-image: url($imageDir + 'mackbook.png');
+  background-size: 288px auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  @include breakpoint(md) {
+    width: 300px;
+  }
+  @include breakpoint(lg) {
+    padding-top: 250px;
+    width: 380px;
+    background-size: 380px auto;
+  }
+}
+
+
+.online-base__btn{
+  
+}

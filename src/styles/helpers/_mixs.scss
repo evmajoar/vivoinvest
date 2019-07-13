@@ -1,0 +1,68 @@
+@import 'variables';
+@import 'mixins';
+
+
+.container {
+  max-width: $commonWidth;
+  margin: 0 auto;
+  padding: 0 $gutter;
+  width: 100%;
+  @include breakpoint(sm) {
+    max-width: 320px;
+  }
+  @include breakpoint(md) {
+    max-width: 750px;
+  }
+  @include breakpoint(lg) {
+    max-width: 1020px;
+  } 
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+
+.fon1{
+  background-color: rgba(49, 174, 49, 0.2);
+  border: 1px solid rgb(49, 174, 49);
+}
+
+.fon2{
+  background-color: rgba(201, 191, 55, 0.2);
+  border: 1px solid rgb(201, 191, 55);
+}
+
+.fon3{
+  background-color: rgba(231, 154, 72, 0.2);
+  border: 1px solid rgb(231, 154, 72);
+}
+
+.fon4{
+  background-color: rgba(125, 77, 77, 0.2);
+  border: 1px solid rgb(125, 77, 77);
+}
+
+.fon5{
+  background-color: rgba(138, 103, 226, 0.2);
+  border: 1px solid rgb(138, 103, 226);
+}
+
+.fon6{
+  background-color: rgba(119, 231, 122, 0.2);
+  border: 1px solid rgb(119, 231, 122);
+}
+
+.fon7{
+  background-color: rgba(208, 70, 166, 0.2);
+  border: 1px solid rgb(208, 70, 166);
+}

@@ -1,0 +1,55 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+
+
+.catalog-complexes{
+  background-color: $bgColor;
+}
+
+.catalog-complexes__container{
+  padding: 40px 10px 50px;
+  background-image: url($imageDir + 'catalog-complexes-mobile.png');
+  background-repeat: no-repeat;
+  background-position: top 320px center;
+  @include breakpoint(md) {
+    padding-bottom: 35px;
+    // background-image: url($imageDir + 'catalog-complexes-tablet.png');
+    background-image: url($imageDir + 'catalog-complexes1.png');
+    background-position: top right;
+    background-size: 375px;
+  }
+  @include breakpoint(lg) {
+    padding-top: 60px;
+    // background-image: url($imageDir + 'catalog-complexes.png');
+    background-size: 575px 402px;
+  }
+}
+
+.catalog-complexes__title{
+  @include sizeH2;
+  margin-bottom: 20px;
+  text-align: center;
+  @include breakpoint(md) {
+    max-width: 450px;
+    text-align: left;
+  }
+  @include breakpoint(lg) {
+    margin-bottom: 30px;
+  }
+}
+
+.catalog-complexes__list{
+  margin-bottom: 250px;
+  @include breakpoint(md) {
+    margin-bottom: 0;
+  }
+}
+
+.catalog-complexes__btn{
+  @include breakpoint(md) {
+    margin-right: 110px;
+  }
+  @include breakpoint(lg) {
+    margin-right: 170px;
+  }
+}

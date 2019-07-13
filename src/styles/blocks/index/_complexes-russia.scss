@@ -1,0 +1,285 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+
+.complexes-russia {
+  padding: 40px 0 50px;
+
+  @include breakpoint(lg) {
+    padding: 65px 0 90px;
+  }
+}
+
+.complexes-russia__title {
+  @include sizeH2;
+  margin-bottom: 15px;
+  text-align: center;
+
+  @include breakpoint(md) {
+    margin-bottom: 5px;
+  }
+}
+
+.complexes-russia__subtitle {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  @include breakpoint(lg) {
+    margin-bottom: 50px;
+  }
+}
+
+.complexes-russia__row {
+  @include breakpoint(md) {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.complexes-russia__view {
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint(md) {
+    margin: 0;
+  }
+}
+
+.complexes-russia__settings-mobile {
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+
+.complexes-russia__settings-desktop {
+  display: none;
+
+  @include breakpoint(md) {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.complexes-russia__filters-list{
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.complexes-russia__filters-item{
+  font-size: 12px;
+  line-height: 15px;
+  &:not(:last-child){
+    margin-right: 12px;
+  }
+}
+
+.complexes-russia__filters-btn{
+  
+}
+
+.complexes-russia__filters--section{
+  padding: 8px 16px;
+  color: $white;
+  font-family: $fontMedium;
+  line-height: 16px;
+  background-color: $colorSite;
+}
+
+.complexes-russia__sort-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  @include breakpoint(md) {
+    min-width: 385px;
+  }
+  @include breakpoint(md) {
+    min-width: 390px;
+  }
+}
+
+.complexes-russia__sort-item{
+  &:not(:last-child){
+    margin-right: 10px;
+    @include breakpoint(md) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.complexes-russia__sort-product {
+  margin-right: 10px;
+  color: $colorSite2;
+}
+
+
+.complexes-russia__sort {
+  @include breakpoint(md) {
+    margin: 0;
+    width: 320px;
+  }
+}
+
+.complexes-russia__sort-price,
+.complexes-russia__filters-complex {
+  width: 100%;
+
+}
+
+.complexes-russia__filters-complex{
+  text-align: left;
+}
+
+.complexes-russia__filters {
+  margin-bottom: 40px;
+
+  @include breakpoint(md) {
+    margin: 0;
+    width: 320px;
+  }
+}
+
+.complexes-russia__result-serch {
+  margin: 0;
+  margin-bottom: 15px;
+  color: $colorSite2;
+  text-align: center;
+  @include breakpoint(md) {
+    margin-bottom: 0;
+    min-width: 260px;
+  }
+}
+
+.complexes-russia__list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+
+  @include breakpoint(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.complexes-russia__item {
+  padding: 20px 15px;
+  margin-bottom: 10px;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  line-height: 16px;
+  font-family: $fontBold;
+  border-radius: 8px;
+  background-color: $colorSite;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s;
+
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    .complexes-russia__quantity{
+      background-color: $btnMarker;
+    }
+  }
+
+  @include breakpoint(md) {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-basis: 354px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  @include breakpoint(lg) {
+    margin-right: 20px;
+    flex-basis: 320px;
+
+    &:nth-child(even) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.complexes-russia__item--1 {
+  background-image: url($imageDir + 'complexes-russia-1.jpg');
+}
+
+.complexes-russia__item--2 {
+  background-image: url($imageDir + 'complexes-russia-2.jpg');
+}
+
+.complexes-russia__item--3 {
+  background-image: url($imageDir + 'complexes-russia-3.jpg');
+}
+
+.complexes-russia__item--4 {
+  background-image: url($imageDir + 'complexes-russia-4.jpg');
+}
+
+.complexes-russia__item--5 {
+  background-image: url($imageDir + 'complexes-russia-5.jpg');
+}
+
+.complexes-russia__item--6 {
+  background-image: url($imageDir + 'complexes-russia-6.jpg');
+}
+
+.complexes-russia__place,
+.complexes-russia__apartment-info,
+.complexes-russia__apartment-name {
+  margin: 0;
+}
+
+.complexes-russia__place,
+.complexes-russia__apartment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.complexes-russia__adress {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.complexes-russia__apartment-info {
+  font-size: 13px;
+}
+
+.complexes-russia__apartment-name {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.complexes-russia__btn-more {
+  display: block;
+  margin: 0 auto;
+}
+
+.complexes-russia__sort-link{
+  border: none;
+  background-color: transparent;
+  outline-color: transparent;
+}
+
+.complexes-russia__sort-link--toggle{
+  color: $colorSite;
+}

@@ -1,0 +1,24 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+@font-face {
+    font-family: 'AvenirNextCyr-Demi';
+    font-display: swap;
+    src: local('AvenirNextCyr-Demi'), url($fontDir + 'AvenirNextCyr-Demi.woff2') format('woff2'), url($fontDir + 'AvenirNextCyr-Demi') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNextCyr-Medium';
+    font-display: swap;
+    src: local('AvenirNextCyr-Medium'), url($fontDir + 'AvenirNextCyr-Medium.woff2') format('woff2'), url($fontDir + 'AvenirNextCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNextCyr-Regular';
+    font-display: swap;
+    src: local('AvenirNextCyr-Regular'), url($fontDir + 'AvenirNextCyr-Regular.woff2') format('woff2'), url($fontDir + 'AvenirNextCyr-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
