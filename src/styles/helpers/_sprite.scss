@@ -1,0 +1,221 @@
+%svg-common {
+	background: url("../icons/sprite.svg") no-repeat;
+}
+
+%-svg-icon-alpha {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 73px;
+	height: 63px;
+}
+
+%-svg-icon-arrow-down {
+	@extend %svg-common;
+	background-position: 0 3.776978417266187%;
+	width: 12px;
+	height: 7px;
+}
+
+%-svg-icon-arrow-right {
+	@extend %svg-common;
+	background-position: 0 4.3343653250774%;
+	width: 14px;
+	height: 60px;
+}
+
+%-svg-icon-burger {
+	@extend %svg-common;
+	background-position: 0 7.840772014475271%;
+	width: 21px;
+	height: 17px;
+}
+
+%-svg-icon-clear {
+	@extend %svg-common;
+	background-position: 0 8.82882882882883%;
+	width: 10px;
+	height: 10px;
+}
+
+%-svg-icon-clock {
+	@extend %svg-common;
+	background-position: 0 9.721362229102168%;
+	width: 60px;
+	height: 60px;
+}
+
+%-svg-icon-close-big {
+	@extend %svg-common;
+	background-position: 0 13.11178247734139%;
+	width: 20px;
+	height: 20px;
+}
+
+%-svg-icon-etalon {
+	@extend %svg-common;
+	background-position: 0 14.381067961165048%;
+	width: 120px;
+	height: 27px;
+}
+
+%-svg-icon-gear {
+	@extend %svg-common;
+	background-position: 0 16.346749226006192%;
+	width: 90px;
+	height: 60px;
+}
+
+%-svg-icon-grow {
+	@extend %svg-common;
+	background-position: 0 20.012353304508956%;
+	width: 61px;
+	height: 56px;
+}
+
+%-svg-icon-isr {
+	@extend %svg-common;
+	background-position: 0 23.114355231143552%;
+	width: 97px;
+	height: 31px;
+}
+
+%-svg-icon-lider-new {
+	@extend %svg-common;
+	background-position: 0 25%;
+	width: 92px;
+	height: 31px;
+}
+
+%-svg-icon-map {
+	@extend %svg-common;
+	background-position: 0 26.771653543307085%;
+	width: 17px;
+	height: 24px;
+}
+
+%-svg-icon-marker-big {
+	@extend %svg-common;
+	background-position: 0 28.641671788567916%;
+	width: 34px;
+	height: 48px;
+}
+
+%-svg-icon-marker-small {
+	@extend %svg-common;
+	background-position: 0 31.132646880678376%;
+	width: 17px;
+	height: 24px;
+}
+
+%-svg-icon-opening {
+	@extend %svg-common;
+	background-position: 0 32.58631132646881%;
+	width: 118px;
+	height: 24px;
+}
+
+%-svg-icon-otpbank {
+	@extend %svg-common;
+	background-position: 0 33.99879007864489%;
+	width: 110px;
+	height: 22px;
+}
+
+%-svg-icon-pik {
+	@extend %svg-common;
+	background-position: 0 35.960591133004925%;
+	width: 51px;
+	height: 51px;
+}
+
+%-svg-icon-play {
+	@extend %svg-common;
+	background-position: 0 39.02888752304855%;
+	width: 48px;
+	height: 48px;
+}
+
+%-svg-icon-sber {
+	@extend %svg-common;
+	background-position: 0 41.36886735311932%;
+	width: 119px;
+	height: 24px;
+}
+
+%-svg-icon-scroll {
+	@extend %svg-common;
+	background-position: 0 48.7250172294969%;
+	width: 25px;
+	height: 224px;
+}
+
+%-svg-icon-scroll-big {
+	@extend %svg-common;
+	background-position: 0 75.8761206193969%;
+	width: 25px;
+	height: 448px;
+}
+
+%-svg-icon-search {
+	@extend %svg-common;
+	background-position: 0 83.32326283987915%;
+	width: 21px;
+	height: 20px;
+}
+
+%-svg-icon-shield {
+	@extend %svg-common;
+	background-position: 0 86.62538699690403%;
+	width: 52px;
+	height: 60px;
+}
+
+%-svg-icon-sort {
+	@extend %svg-common;
+	background-position: 0 87.62762762762763%;
+	width: 12px;
+	height: 10px;
+}
+
+%-svg-icon-sovbank {
+	@extend %svg-common;
+	background-position: 0 88.49397590361446%;
+	width: 118px;
+	height: 15px;
+}
+
+%-svg-icon-suit {
+	@extend %svg-common;
+	background-position: 0 91.88854489164086%;
+	width: 60px;
+	height: 60px;
+}
+
+%-svg-icon-tinkoff {
+	@extend %svg-common;
+	background-position: 0 93.29305135951661%;
+	width: 99px;
+	height: 20px;
+}
+
+%-svg-icon-vostok {
+	@extend %svg-common;
+	background-position: 0 94.50151057401813%;
+	width: 110px;
+	height: 20px;
+}
+
+%-svg-icon-vtb {
+	@extend %svg-common;
+	background-position: 0 96.35036496350365%;
+	width: 88px;
+	height: 31px;
+}
+
+%-svg-icon-zoom {
+	@extend %svg-common;
+	background-position: 0 100%;
+	width: 87px;
+	height: 60px;
+}
+

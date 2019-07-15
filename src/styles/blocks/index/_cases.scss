@@ -1,0 +1,165 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+@import '../../helpers/sprite';
+
+.cases{
+  padding: 40px 0 50px;
+  background-color: $bgColor;
+
+  @include breakpoint(lg) {
+    padding: 65px 0 90px;
+  }
+}
+
+.cases__title{
+  @include sizeH2;
+  margin-bottom: 15px;
+  text-align: center;
+
+  @include breakpoint(md) {
+    margin-bottom: 5px;
+  }
+}
+
+.cases__subtitle{
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  @include breakpoint(lg) {
+    margin-bottom: 50px;
+  }
+}
+
+.cases__carousel-list,
+.cases__report-list{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.cases__item-info{
+  @include breakpoint(md) {
+    margin-bottom: 35px;
+    padding-right: 30px;
+    display: flex;
+  }
+}
+
+.cases__table{
+  margin-bottom: 20px;
+  padding: 25px 15px 20px;
+  width: 100%;
+  background-color: $white;
+  @include breakpoint(md) {
+    margin-bottom: 0;
+    margin-right: 20px;
+    flex-basis: 50%;
+    width: 50%;
+  }
+  @include breakpoint(lg) {
+    margin-right: 40px;
+  }
+}
+
+.cases__value{
+  font-size: 13px;
+  color: $colorSite2;
+  font-weight: 400;
+  @include breakpoint(lg) {
+    width: 230px;
+    font-size: 15px;
+  }
+}
+
+.cases__field{
+  font-size: 13px;
+  font-family: $fontBold;
+  text-align: right;
+  @include breakpoint(lg) {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+.cases__more{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: block;
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+
+.cases__report{
+  // display: none;
+  @include breakpoint(md) {
+    position: relative;
+    display: block;
+    flex-basis: 50%;
+  }
+  &:after{
+    @include pseudo;
+    @extend %-svg-icon-scroll;
+    right: -25px;
+    top: 0;
+  }
+  @include breakpoint(lg) {
+    padding-right: 60px;
+  }
+}
+
+.cases__report--hidden{
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+}
+
+.cases__report-title{
+  margin: 0;
+  font-size: 13px;
+  font-family: $fontBold;
+  @include breakpoint(lg) {
+    font-size: 15px;
+  }
+}
+
+.cases__report-item{
+  &:not(:last-child){
+    margin-bottom: 25px;
+  }
+}
+
+.slick-dots{
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  li{
+    button{
+      padding: 5px 10px;
+      color: $colorSite2;
+      border-radius: 50%;
+      border: none;
+      background-color: transparent;
+      outline-color: transparent;
+    }
+  }
+  .slick-active{
+    button{
+      color: $colorSite;
+      background-color: $hoverTab;
+    }
+  }
+}
+
+.cases__carousel-item {
+  outline-color: transparent;
+  @include breakpoint(md) {
+    padding: 0 15px;
+  }
+}
+
+
+

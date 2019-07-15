@@ -1,0 +1,145 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+
+.main-footer {
+  padding: 40px 0 0;
+  // Прижимаем футер к низу экрана
+  margin-top: auto;
+}
+
+.main-footer__contacts {
+  margin-bottom: 20px;
+
+  @include breakpoint(md) {
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint(lg) {
+    max-width: 1360px;
+  }
+}
+
+.main-footer__logo {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.main-footer__callback-btn {
+  margin-bottom: 25px;
+
+  @include breakpoint(lg) {
+    margin-bottom: 0;
+    order: 2;
+  }
+}
+
+.main-footer__contact-block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include breakpoint(md) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include breakpoint(lg) {
+    margin-left: auto;
+    margin-right: 45px;
+  }
+}
+
+.main-footer__contact-block-item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+
+    @include breakpoint(md) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+}
+
+.main-footer__top {
+  text-align: center;
+
+  @include breakpoint(lg) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-footer__bottom-container {
+  max-width: 100%;
+  padding: 0;
+  text-align: center;
+
+  @include breakpoint(md) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $bgColor;
+  }
+
+  @include breakpoint(lg) {
+    padding: 0 10px;
+    max-width: 1360px;
+    justify-content: flex-start;
+  }
+}
+.main-footer__bottom {
+  margin: 0;
+  padding: 20px 0;
+  color: $colorSite2;
+  font-size: 13px;
+  background-color: $bgColor;
+
+  @include breakpoint(md) {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.main-footer__bottom-wrapper{
+  @include breakpoint(md) {
+    background-color: $bgColor;
+  }
+}
+
+
+.main-footer__info {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(md) {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  @include breakpoint(lg) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.main-footer__info-link {
+  margin: 0;
+  padding: 20px 0 25px;
+  display: block;
+  background-color: $white;
+
+  @include breakpoint(md) {
+    padding: 0;
+    background-color: $bgColor;
+  }
+
+  @include breakpoint(lg) {
+    margin-left: auto;
+  }
+}

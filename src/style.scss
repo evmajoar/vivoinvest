@@ -1,0 +1,25 @@
+// Common
+@import 'styles/common/normalize';
+@import 'styles/common/fonts';
+@import 'styles/common/common';
+
+// Helpers
+@import 'styles/helpers/mixs';
+@import "styles/helpers/sprite";
+@import "styles/helpers/animations";
+
+// Blocks
+@import 'styles/blocks/index/main-header';
+@import 'styles/blocks/index/advantages';
+@import 'styles/blocks/index/useful-information';
+@import 'styles/blocks/index/catalog-complexes';
+@import 'styles/blocks/index/complexes-russia';
+@import 'styles/blocks/index/cases';
+@import 'styles/blocks/index/call-to-action';
+@import 'styles/blocks/index/online-base';
+@import 'styles/blocks/index/sales-manager';
+@import 'styles/blocks/index/advantages-company';
+@import 'styles/blocks/index/liders';
+@import 'styles/blocks/index/about-us';
+@import 'styles/blocks/index/main-footer';
+@import 'styles/blocks/index/modal';
